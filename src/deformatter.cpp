@@ -12,7 +12,7 @@
 void Deformatter::deformatTraceData(const std::uint8_t *data,
                                     const std::size_t data_size,
                                     std::vector<std::uint8_t> &deformat_data) {
-  for (size_t data_idx = 0; data_idx < data_size; data_idx += 16) {
+  for (std::size_t data_idx = 0; data_idx < data_size; data_idx += 16) {
     for (int frame_byte = 0; frame_byte <= 14; ++frame_byte) {
       uint8_t new_trace_id = this->trace_id;
 
